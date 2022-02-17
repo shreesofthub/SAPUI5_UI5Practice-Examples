@@ -1,0 +1,10 @@
+<mvc:View controllerName="upe.upetable1.controller.table9_1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:layout="sap.ui.layout">
+    <Page id="idTable9_1" title="{i18n>table9_1}" showNavButton="true" navButtonPress="onBack">
+        <layout:Splitter id="idSplitter" height="500px">
+            
+        </layout:Splitter>
+    </Page>
+</mvc:View>

@@ -1,0 +1,9 @@
+<mvc:View controllerName="upe.upetable1.controller.list"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc">
+    <Page id="idSFPage" title="{i18n>sfPage}" showNavButton="true" navButtonPress="onBack">
+        <Panel id="idSFPanel">
+            
+        </Panel>
+    </Page>
+</mvc:View>

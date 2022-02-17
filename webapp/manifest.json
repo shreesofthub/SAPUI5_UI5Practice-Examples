@@ -1,0 +1,406 @@
+{
+    "_version": "1.32.0",
+    "sap.app": {
+        "id": "upe.upetable1",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "applicationVersion": {
+            "version": "0.0.1"
+        },
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}",
+        "dataSources": {
+            "mainService": {
+                "uri": "/model/mockData/empData.json",
+                "type": "JSON",
+                "settings": {
+                    "annotations": [],
+                    "localUri": "localService/metadata.xml",
+                    "odataVersion": "4.0"
+                }
+            }
+        }
+    },
+    "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+            "icon": "",
+            "favIcon": "",
+            "phone": "",
+            "phone@2": "",
+            "tablet": "",
+            "tablet@2": ""
+        },
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        }
+    },
+    "sap.ui5": {
+        "flexEnabled": true,
+        "dependencies": {
+            "minUI5Version": "1.97.0",
+            "libs": {
+                "sap.ui.core": {},
+                "sap.m": {},
+                "sap.ui.table": {},
+                "sap.ui.layout": {},
+                "sap.ui.commons": {}
+            }
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleName": "upe.upetable1.i18n.i18n"
+                }
+            },
+            "": {
+                "dataSource": "mainService",
+                "preload": true,
+                "settings": {
+                    "synchronizationMode": "None",
+                    "operationMode": "Server",
+                    "autoExpandSelect": true,
+                    "earlyRequests": true,
+                    "groupId": "$direct"
+                }
+            }
+        },
+        "resources": {
+            "css": [
+                {
+                    "uri": "css/style.css"
+                }
+            ]
+        },
+        "routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "viewType": "XML",
+                "async": true,
+                "viewPath": "upe.upetable1.view",
+                "controlAggregation": "beginColumnPages",
+                "controlId": "app"
+            },
+            "routes": [
+                {
+                    "name": "RouteappView",
+                    "pattern": "RouteappView",
+                    "target": [
+                        "TargetRadioButtonappView"
+                    ]
+                },
+                {
+                    "name": "tView1",
+                    "pattern": "tView1",
+                    "target": "targetView1"
+                },
+                {
+                    "name": "tableMulSel",
+                    "pattern": "patternTableMulSel",
+                    "target": "targetMulSel"
+                },
+                {
+                    "name": "list",
+                    "pattern": "patternList",
+                    "target": "targetList"
+                },
+                {
+                    "name": "table_3",
+                    "pattern": "patternTable3",
+                    "target": "targetTable3"
+                },
+                {
+                    "name": "table3_1",
+                    "pattern": "patternTable3_1",
+                    "target": "targetTable3_1"
+                },
+                {
+                    "name": "table4_1",
+                    "pattern": "patternTable4_1",
+                    "target": "targetTable4_1"
+                },
+                {
+                    "name": "table5_1",
+                    "pattern": "patternTable5_1",
+                    "target": "targetTable5_1"
+                },
+                {
+                    "pattern": "patternTable6_1",
+                    "target": "targetTable6_1",
+                    "name": "table6_1"
+                },
+                {
+                    "pattern": "patternTable7_1",
+                    "target": "targetTable7_1",
+                    "name": "table7_1"
+                },
+                {
+                    "pattern": "patternTable7_2",
+                    "target": "targetTable7_2",
+                    "name": "table7_2"
+                },
+                {
+                    "name": "table8_1",
+                    "pattern": "patternTable8_1",
+                    "target": "targetTable8_1"
+                },
+                {
+                    "name": "table9_1",
+                    "pattern": "patternTable9_1",
+                    "target": "targetTable9_1"
+                },
+                {
+                    "name": "table10_1",
+                    "pattern": "patternTable10_1",
+                    "target": "targetTable10_1"
+                },
+                {
+                    "name": "table11_1",
+                    "pattern": "patternTable11_1",
+                    "target": "targetTable11_1"
+                },
+                {
+                    "name": "table12_1",
+                    "pattern": "patternTable12_1",
+                    "target": "targetTable12_1"
+                },
+                {
+                    "name": "table13_1",
+                    "pattern": "patternTable13_1",
+                    "target": "targetTable13_1"
+                },
+                {
+                    "name": "table14_1",
+                    "pattern": "patternTable14_1",
+                    "target": "targetTable14_1"
+                },
+                {
+                    "name": "cb1_1",
+                    "pattern": "patternCb1_1",
+                    "target": "targetCb1_1"
+                },
+                {
+                    "name": "cb2_1",
+                    "pattern": "patternCb2_1",
+                    "target": "targetCb2_1"
+                },
+                {
+                    "name": "cb3_1",
+                    "pattern": "patternCb3_1",
+                    "target": "targetCb3_1"
+                },
+                {
+                    "name": "cb4_1",
+                    "pattern": "patternCb4_1",
+                    "target": "targetCb4_1"
+                },
+                {
+                    "name": "nbv1_1",
+                    "pattern": "patternNbv1_1",
+                    "target": "targetNbv1_1"
+                },
+                {
+                    "name": "nbv1_1_2",
+                    "pattern": "patternNbv1_1/{index}",
+                    "target": "targetNbv1_1_2"
+                },
+                {
+                    "name": "iit1",
+                    "pattern": "patternIit1",
+                    "target": "targetIit1"
+                }
+            ],
+            "targets": {
+                "TargetRadioButtonappView": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "controlAggregation": "pages",
+                    "viewId": "idAppView",
+                    "viewName": "appView",
+                    "viewLevel": 1
+                },
+                "targetView1": {
+                    "viewTYpe": "XML",
+                    "viewName": "View1",
+                    "controlAggregation": "pages",
+                    "viewId": "idView1",
+                    "viewLevel": 2
+                },
+                "targetMulSel": {
+                    "viewName": "tableMultiSel",
+                    "viewId": "idTableMulSel",
+                    "viewType": "XML",
+                    "controlAggregation": "pages",
+                    "viewLevel": 2
+                },
+                "targetList": {
+                    "viewId": "idList",
+                    "viewName": "list",
+                    "vieType": "XML",
+                    "controlAggregation": "pages",
+                    "viewLevel": 3
+                },
+                "targetTable3": {
+                    "viewName": "table3_1",
+                    "viewType": "XML",
+                    "viewId": "idTable3",
+                    "controlAggregation": "pages",
+                    "viewLevel": 2
+                },
+                "targetTable3_1": {
+                    "viewName": "table3_2",
+                    "viewType": "XML",
+                    "viewLevel": 3,
+                    "controlAggregation": "pages",
+                    "viewId": "idTable3_1"
+                },
+                "targetTable4_1": {
+                    "viewName": "table4_1",
+                    "viewId": "idTable4_1",
+                    "viewType": "XML",
+                    "controlAggregation": "pages",
+                    "viewLevel": 2
+                },
+                "targetTable5_1": {
+                    "viewName": "table5_1",
+                    "viewType": "XML",
+                    "viewLevel": 2,
+                    "controlAggregation": "pages",
+                    "viewId": "idTable5_1"
+                },
+                "targetTable6_1": {
+                    "viewName": "table6_1",
+                    "viewType": "XML",
+                    "viewLevel": 2,
+                    "controlAggregation": "pages",
+                    "viewId": "idTable6_1V"
+                },
+                "targetTable7_1": {
+                    "viewName": "table7_1",
+                    "viewType": "XML",
+                    "viewId": "idTable7_1V",
+                    "controlAggregation": "pages",
+                    "viewLevel": 2
+                },
+                "targetTable7_2": {
+                    "viewName": "table7_2",
+                    "viewType": "XML",
+                    "viewId": "idTable7_2V",
+                    "controlAggregation": "pages",
+                    "viewLevel": 3
+                },
+                "targetTable8_1": {
+                    "viewName": "table8_1",
+                    "viewId": "idTable8_1V",
+                    "viewType": "XML",
+                    "controlAggregation": "pages",
+                    "viewLevel": 2
+                },
+                "targetTable9_1": {
+                    "viewName": "table9_1",
+                    "viewType": "XML",
+                    "viewLevel": 2,
+                    "controlAggregation": "pages",
+                    "viewId": "idTable9_1V"
+                },
+                "targetTable10_1": {
+                    "viewName": "table10_1",
+                    "viewType": "XML",
+                    "viewLevel": 2,
+                    "viewId": "idTable10_1V",
+                    "controlAggregation": "pages"
+                },
+                "targetTable11_1": {
+                    "viewName": "table11_1",
+                    "viewType": "XML",
+                    "viewLevel": 2,
+                    "controlAggregation": "pages",
+                    "viewId": "idTable11_1V"
+                },
+                "targetTable12_1": {
+                    "viewName": "table12_1",
+                    "viewType": "XML",
+                    "viewLevel": 2,
+                    "viewId": "idTable12_1V",
+                    "controlAggregation": "pages"
+                },
+                "targetTable13_1": {
+                    "viewName": "table13_1",
+                    "viewId": "idTable13_1V",
+                    "viewLevel": 2,
+                    "controlAggregation": "pages",
+                    "viewType": "XML"
+                },
+                "targetTable14_1": {
+                    "viewName": "table14_1",
+                    "viewId": "table14_1V",
+                    "viewLevel": 2,
+                    "controlAggregation": "pages",
+                    "viewType": "XML"
+                },
+                "targetCb1_1": {
+                    "viewName": "cb1_1",
+                    "viewLevel": 2,
+                    "viewId": "idCb1_1V",
+                    "controlAggregation": "pages",
+                    "viewType": "XML"
+                },
+                "targetCb2_1": {
+                    "viewName": "cb2_1",
+                    "viewId": "idCb2_1V",
+                    "controlAggregation": "pages",
+                    "viewLevel": 2,
+                    "viewType": "XML"
+                },
+                "targetCb3_1": {
+                    "viewName": "cb3_1",
+                    "viewLevel": 2,
+                    "viewId": "idCb3_1V",
+                    "viewType": "XML",
+                    "controlAggregation": "pages"
+                },
+                "targetCb4_1": {
+                    "viewName": "cb4_1",
+                    "viewLevel": 2,
+                    "viewId": "idCb4_1V",
+                    "viewType": "XML",
+                    "controlAggregation": "pages"
+                },
+                "targetIit1": {
+                    "viewName": "iit1",
+                    "viewLevel": 2,
+                    "viewId": "idIit1V",
+                    "viewType": "XML",
+                    "controlAggregation": "pages"
+                },
+                "targetNbv1_1": {
+                    "viewName": "nbv1_1",
+                    "viewType": "XML",
+                    "viewId": "idNbv1_1V",
+                    "controlAggregation": "pages",
+                    "viewLevel": 2
+                },
+                "targetNbv1_1_2": {
+                    "viewName": "nbv1_1_2",
+                    "viewType": "XML",
+                    "viewId": "idNbv1_1_2V",
+                    "controlAggregation": "pages",
+                    "viewLevel": 3
+                }
+            }
+        },
+        "rootView": {
+            "viewName": "upe.upetable1.view.appView",
+            "type": "XML",
+            "async": true,
+            "id": "appView"
+        }
+    }
+}

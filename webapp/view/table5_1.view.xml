@@ -1,0 +1,47 @@
+<mvc:View controllerName="upe.upetable1.controller.table5_1"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:table="sap.ui.table">
+    <Page id="page5_1" title="Delete Multiple Records" navButtonPress="onBack" showNavButton="true">
+        <table:Table id="idTable5_1" alternateRowColors="true" selectionMode="Multi" visibleRowCount="5">
+            <table:columns>
+                <table:Column id="idC5_1" autoResizable="true" >
+                    <table:label>
+                        <Label id="idL5_1" text="Name"></Label>
+                    </table:label>
+                    <table:template>
+                        <Text id="idText5_1" text="{name}"/>
+                    </table:template>
+                </table:Column>
+                <table:Column id="idC5_2" autoResizable="true" >
+                    <table:label>
+                        <Label id="idL5_2" text="FatherName"></Label>
+                    </table:label>
+                    <table:template>
+                        <Text id="idText5_2" text="{fatherName}"/>
+                    </table:template>
+                </table:Column>
+                <table:Column id="idC5_3" autoResizable="true" >
+                    <table:label>
+                        <Label id="idL5_3" text="City"></Label>
+                    </table:label>
+                    <table:template>
+                        <Text id="idText5_3" text="{city}"/>
+                    </table:template>
+                </table:Column>
+                <table:Column id="idC5_4" autoResizable="true">
+                    <table:label>
+                        <Label id="idL5_4" text="Phone Number"></Label>
+                    </table:label>
+                    <table:template>
+                        <Text id="idText5_4" text="{phone}"/>
+                    </table:template>
+                </table:Column>
+            </table:columns>
+            <table:footer>
+                <Button id="idDelete" text="Delete" press="onDelete"></Button>
+            </table:footer>
+        </table:Table>
+        <Panel id="idPanel5_1" headerText="Above Deleted Items Display" expandable="true"></Panel>
+    </Page>
+</mvc:View>

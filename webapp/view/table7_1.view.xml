@@ -1,0 +1,8 @@
+<mvc:View xmlns:layout="sap.ui.layout" controllerName="upe.upetable1.controller.table7_1"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc">
+    <Page id="idTable7_1" title="{i18n>table7_1}" showNavButton="true" navButtonPress="onBack">
+        <layout:VerticalLayout id="idLayout7_1" width="50%">
+        </layout:VerticalLayout>
+    </Page>
+</mvc:View>

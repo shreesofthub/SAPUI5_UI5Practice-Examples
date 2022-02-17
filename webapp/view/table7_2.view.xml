@@ -1,0 +1,8 @@
+<mvc:View controllerName="upe.upetable1.controller.table7_2"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:layout="sap.ui.layout">
+    <Page id="idTable7_2" title="{i18n>table7_2}" showNavButton="true" navButtonPress="onBack">
+        <layout:HorizontalLayout id="idHLayout"></layout:HorizontalLayout>
+    </Page>
+</mvc:View>

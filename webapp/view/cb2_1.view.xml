@@ -1,0 +1,5 @@
+<mvc:View controllerName="upe.upetable1.controller.cb2_1" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:layout="sap.ui.layout">
+    <Page title="Display drop down list with Multi Select Combo Box-Disable/Enable editable/Non-editable" id="idCb2_1" showNavButton="true" navButtonPress="onBack">
+        <layout:Splitter id="idSplitterCb2_1" width="50%" height="50%"> </layout:Splitter>
+    </Page>
+</mvc:View>

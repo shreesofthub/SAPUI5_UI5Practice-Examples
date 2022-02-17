@@ -1,0 +1,4 @@
+<mvc:View controllerName="upe.upetable1.controller.cb3_1" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+    <Page id="idCb3_1" title="Showing dropdown List using multiComboBox " showNavButton="true" navButtonPress="onBack">
+    </Page>
+</mvc:View>

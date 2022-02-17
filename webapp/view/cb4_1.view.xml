@@ -1,0 +1,4 @@
+<mvc:View controllerName="upe.upetable1.controller.cb4_1" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+    <Page id="idCb4_1" title="Get selected Item in combobox " showNavButton="true" navButtonPress="onBack">
+    </Page>
+</mvc:View>

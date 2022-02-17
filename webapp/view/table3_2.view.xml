@@ -1,0 +1,35 @@
+    <mvc:View controllerName="upe.upetable1.controller.table3_2"
+        xmlns:mvc="sap.ui.core.mvc"
+        xmlns="sap.m"
+        xmlns:table="sap.ui.table">
+        <Page title="{i18n>table3_2}" id="idPage3_2" showNavButton="true" navButtonPress="onBack">
+            <table:Table id="idUiTable1" alternateRowColors="true" selectionMode="Single" visibleRowCount="5" rows="{/emp}">
+                <table:columns>
+                    <table:Column autoResizable="true" id="idCol1">
+                        <table:label>
+                            <Label text="UserId" id="idLabl1"></Label>
+                        </table:label>
+                        <table:template>
+                            <Text text="{id}" id="idText1"></Text>
+                        </table:template>
+                    </table:Column>
+                    <table:Column autoResizable="true" id="idCol2">
+                        <table:label>
+                            <Label text="Name" id="idLabl2"></Label>
+                        </table:label>
+                        <table:template>
+                            <Text text="{name}" id="idText2"></Text>
+                        </table:template>
+                    </table:Column>
+                    <table:Column autoResizable="true" id="idCol3">
+                        <table:label>
+                            <Label text="Father Name" id="idLabl3"></Label>
+                        </table:label>
+                        <table:template>
+                            <Text text="{fatherName}" id="idText3"></Text>
+                        </table:template>
+                    </table:Column>
+                </table:columns>
+            </table:Table>
+        </Page>
+    </mvc:View>

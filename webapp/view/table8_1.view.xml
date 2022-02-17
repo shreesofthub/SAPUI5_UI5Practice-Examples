@@ -1,0 +1,7 @@
+<mvc:View controllerName="upe.upetable1.controller.table8_1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="idTable8_1" title="" showNavButton="true" navButtonPress="onBack">
+    
+    </Page>
+</mvc:View>

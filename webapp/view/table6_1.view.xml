@@ -1,0 +1,8 @@
+<mvc:View controllerName="upe.upetable1.controller.table6_1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="idPage6_1" title="Delete Single Record" showNavButton="true" navButtonPress="onBack">
+        <VBox id="idVBox6_1_1"></VBox>
+        <VBox id="idVBox6_1_2"></VBox>
+    </Page>
+</mvc:View>

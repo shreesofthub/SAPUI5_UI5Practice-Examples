@@ -1,0 +1,7 @@
+<mvc:View controllerName="upe.upetable1.controller.table12_1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="idTable12_1" title="Editable Table with check Box and Rating Columns and link column" showNavButton="true" navButtonPress="onBack">
+
+    </Page>
+</mvc:View>

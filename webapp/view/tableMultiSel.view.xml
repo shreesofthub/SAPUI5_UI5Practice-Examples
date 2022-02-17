@@ -1,0 +1,13 @@
+<mvc:View controllerName="upe.upetable1.controller.tableMultiSel"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <Page id="idPageMulSel" title="{i18n>rb2Tooltip}" showNavButton="true" navButtonPress="onBackToAppView">
+        <headerContent>
+            <Select items="{DD>/dropDown}" id="idSelect" change="onChange">
+                <core:Item text="{DD>text}" id="idSelectItem"></core:Item>
+            </Select>
+        </headerContent>
+        <Panel id="idPanelMulSel"></Panel>
+    </Page>
+</mvc:View>

@@ -1,0 +1,64 @@
+<mvc:View controllerName="upe.upetable1.controller.appView"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="idPage" title="{i18n>title}">
+                    <subHeader>
+                        <OverflowToolbar id="idAppOTB">
+                            <Link id="idAppLinkE" href="https://blogs.sap.com/2015/06/13/ui5-programming-examples/" text="Examples_WebSite"></Link>
+                            <Link id="idAppLinkS" href="https://sapui5.hana.ondemand.com/#/" text="sapUi5Sdk"></Link>
+                        </OverflowToolbar>
+                    </subHeader>
+                    <Panel id="idPanelApp1" expandable="true" headerText="Table Related Examples" expand="onExpand">
+                        <VBox id="idBox1">
+                            <RadioButtonGroup id="idRbg">
+                                <buttons>
+                                    <RadioButton id="idRb1" text="Tabel-Display Selected Record SingleSelectionMode(sap.m.Table in Controller)" tooltip="{i18n>rb1Tooltip}"></RadioButton>
+                                    <RadioButton id="idRb2" text="Table-Display Selected Records MutipleSelectionMode-(sap.m.Table in Controller and sap.m.List in controller)" tooltip="{18n>rb2Tooltip}"></RadioButton>
+                                    <RadioButton id="idRb3" text="Tabel-Delete single Record-Display Deleted records in another table of same view,undeleted in another view-(sap.m.Table in Controller and sap.ui.table.Table in View)"></RadioButton>
+                                    <RadioButton id="idRb4" text="Table-Delete Record-Append that record into same table-(sap.m.Table in Controller)"></RadioButton>
+                                    <RadioButton id="idRb5" text="Table-Delete Multiple Records at a time and add deleted records into new table in same view and 2nd table records add back to 1st table-(sap.ui.table.Table in View and sap.m.Table in Controller)"></RadioButton>
+                                    <RadioButton id="idRb6" text="Table-Delte Single Record and Multiple Records-(sap.ui.table.Table,CheckBox in controller)"></RadioButton>
+                                    <RadioButton id="idRb7" text="Table-Add Records to Table using Input Fields and Delete the Records from Table-(sap.ui.table.Table,SimpleForm in controller and Layout)"></RadioButton>
+                                    <RadioButton id="idRb8" text="Table-F4 Help inside Table Row-(sap.ui.table.Table,sap.m.Button in controller)"></RadioButton>
+                                    <RadioButton id="idRb9" text="Table-Row Selection Move UP or DOWN by using Buttons-(sap.ui.table.Table in Controller)"></RadioButton>
+                                    <RadioButton id="idRb10" text="Table-Add Values into Table row-array of input fields values adding to table(sap.ui.table.Table in controller)"></RadioButton>
+                                    <RadioButton id="idRb11" text="Table-view more or view less without using growth property using button"></RadioButton>
+                                    <RadioButton id="idRb12" text="Table-Editable Table with Rating Column,checkBox Column(sap.ui.table in Controller)"></RadioButton>
+                                    <RadioButton id="idRb13" text="Table Rebinding after adding some value to the table"></RadioButton>
+                                    <RadioButton id="idRb14" text="Table Merge Cells"></RadioButton>
+                                </buttons>
+                            </RadioButtonGroup>
+                        </VBox>
+                    </Panel>
+                    <Panel id="idPanelApp2" expandable="true" headerText="Combo Box Examples" expand="onExpand">
+                        <RadioButtonGroup id="idRbg1">
+                            <buttons>
+                                <RadioButton id="idRb1_1" text="Combo Box in Table"></RadioButton>
+                                <RadioButton id="idRb1_2" text="Multi Select Combo Box" ></RadioButton>
+                                <RadioButton id="idRb1_3" text="Multi Select Combo Box-onAfterRendering"></RadioButton>
+                                <RadioButton id="idRb1_4" text="Get selected Item of combobox and Display"></RadioButton>
+                            </buttons>
+                        </RadioButtonGroup>
+                    </Panel>
+                    <Panel id="idPanelApp3" expandable="true" headerText="Navigation Between Views" expand="onExpand">
+                        <RadioButtonGroup id="idRbg2">
+                            <RadioButton id="idRb2_1" text="values passing between List to Detail-1-(sap.m.List/standardListItem,sap.ui.core.SimpleForm in Controller)"></RadioButton>
+                            <!-- <RadioButton id="idRb2_2" text="values passing between List to Detail-2(sap.m.Page,sap.m.List/ObjectListItem,sap.ui.core.SimpleForm,style in Controller"></RadioButton> -->
+                        </RadioButtonGroup>
+                    </Panel>
+                    <Panel id="idPanelApp4" expandable="true" headerText="IIT_Examples" expand="onExpand">
+                        <RadioButtonGroup id="idRbg3">
+                            <RadioButton id="idRb3_1" text="SimpleForm- get Input values from SF and display in another SF and make SF Invisible-(sap.ui.core.SimpleForm in Controller/View)"></RadioButton>
+                        </RadioButtonGroup>
+                    </Panel>
+                    <VBox id="idBox2">
+                        <Button id="idButtonNext" text="Next" press="_on_Next"></Button>
+                    </VBox>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

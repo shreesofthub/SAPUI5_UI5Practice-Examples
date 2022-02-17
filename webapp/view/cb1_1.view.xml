@@ -1,0 +1,11 @@
+<mvc:View controllerName="upe.upetable1.controller.cb1_1" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
+    <Page title="Display drop down list using Combo Box/Select as a column in Table" id="idCb1_1" showNavButton="true" navButtonPress="onBack">
+        <headerContent>
+            <Switch id="idSwitchCb1_1" type="AcceptReject" change="onSwitch"></Switch>
+        </headerContent>
+        <Panel id="idPanelCb1" expandable="true" headerText="comboBox using sap.ui.core.ListItem">
+        </Panel>
+        <Panel id="idPanelCb1_1" expandable="true" headerText="using sap.m.Select">
+        </Panel>
+    </Page>
+</mvc:View>

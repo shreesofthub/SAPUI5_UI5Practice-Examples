@@ -1,0 +1,7 @@
+<mvc:View controllerName="upe.upetable1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>rb1Tooltip}" showNavButton="true" navButtonPress="_onBackView1_Rb" >
+        <Panel id="idPanelforContent"></Panel>
+    </Page>
+</mvc:View>

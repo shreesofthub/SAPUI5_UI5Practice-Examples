@@ -1,0 +1,27 @@
+<mvc:View controllerName="upe.upetable1.controller.iit1" 
+          xmlns="sap.m" 
+          xmlns:mvc="sap.ui.core.mvc" 
+          xmlns:form="sap.ui.layout.form"
+          xmlns:core="sap.ui.core">
+    <Page title="Get the SimpleForm Data and make it Invisible" id="idIit1P" showNavButton="true" navButtonPress="onBack">
+        <content>
+            <form:SimpleForm id="idSfIp" editable="true" layout="GridLayout" width="50%">
+                <form:content>
+                    <Label id="idSfL1_1" text="First Name"></Label>
+                    <Input id="idSfI1_1" placeholder="Please Give First Name"/>
+                    <Label id="idSfL1_2" text="Last Name"/>
+                    <Input id="idSfI1_2" placeholder="Please Give Last Name"/>
+                    <Label id="idSfL1_3" text="Age"></Label>
+                    <Input id="idSfI1_3" placeholder="Please Give Age"/>
+                    <Label id="idSfL1_4" text="City"/>
+                    <Input id="idSfI1_4" placeholder="Please Give City"/>
+                </form:content>
+                <form:title>
+                    <core:Title id="idSfT1" text="Input Form">
+                    </core:Title>
+                </form:title>
+            </form:SimpleForm>  
+            <Button id="idSfB1" text="Display" press="onDisplay" />          
+        </content>
+    </Page>
+</mvc:View>
